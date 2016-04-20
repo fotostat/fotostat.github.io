@@ -1,0 +1,81 @@
+<!-- This File is used to test the deployed relocation-start-Schnipsel -->
+<!--1. update deployed CSS e.g. app-start-0.0.321.css-->
+<!--2. update deployed JS e.g. app-start-0.0.321.js-->
+<!--3. Enjoy!-->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+       <link rel="stylesheet" href="http://static.ua-head.immonet.asv.local/styles/app-start-0.0.331.css">
+  <!--<link rel="stylesheet" href="http://localhost:4000/iframes/relocation-start-iw.css">-->
+  <link rel="stylesheet" href="http://static.umzugsauktion.de/styles/app-start-0.0.322.css">
+
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+</head>
+<body>
+<div id="umzug-ui-version" style="display:none"> TEST </div>
+<div class="mboxDefault"></div>
+<script>
+  dataLayer = [];
+  var parentIFrame;
+</script>
+
+<div style="with:100%; max-width:1200px; margin:0 auto;">
+  <div >
+    <!--<script src="http://static.ua-head.immonet.asv.local/scripts/app-start-0.0.386.js"></script>-->
+    <!--<script src="http://localhost:3000/app-start-0.0.383.js"></script>-->
+    <script src="http://static.umzugsauktion.de/scripts/app-start-0.0.322.js"></script>
+    <script src="config.js"></script>
+    <ui-entry data-ng-app="RelocationUi" ng-include="'html/views/relocationStart.html'" url="http://relocationform.umzugsauktion.de/ua-tunnel.html"></ui-entry>
+
+  </div>
+  <div id="benefitsdiv" class="showbenefit">
+    <div class="ekomi">
+      <!-- eKomiSeal START -->
+      <div id="eKomiSeal_default" class="ekomiloader"></div>
+      <!-- eKomiSeal END -->
+
+      <!-- eKomiLoader START, only needed once per page -->
+      <script type="text/javascript">
+        (function(){
+          eKomiIntegrationConfig = new Array(
+            {certId:'BNYLJUC17RMFRY8'}
+          );
+          if(typeof eKomiIntegrationConfig != "undefined"){for(var eKomiIntegrationLoop=0;eKomiIntegrationLoop<eKomiIntegrationConfig.length;eKomiIntegrationLoop++){
+            var eKomiIntegrationContainer = document.createElement('script');
+            eKomiIntegrationContainer.type = 'text/javascript'; eKomiIntegrationContainer.defer = true;
+            eKomiIntegrationContainer.src = (document.location.protocol=='https:'?'https:':'http:') +"//connect.ekomi.de/integration_1455097392/" + eKomiIntegrationConfig[eKomiIntegrationLoop].certId + ".js";
+            document.getElementsByTagName("head")[0].appendChild(eKomiIntegrationContainer);
+          }}else{if('console' in window){ console.error('connectEkomiIntegration - Cannot read eKomiIntegrationConfig'); }}
+        })();
+      </script>
+      <!-- eKomiLoader END, only needed once per page -->
+      <div class="ratingekomi">
+        <span><a href="https://www.ekomi.de/bewertungen-umzugsauktion.html" target="_blank">Kundenbewertung 4,7 / 5</a></span>
+        <div class="starsekomi"><a href="https://www.ekomi.de/bewertungen-umzugsauktion.html" target="_blank"></a></div>
+      </div>
+    </div>
+    <div class="benefits">
+      <ul class="benefitslist">
+        <li>Kostenlos & unverbindlich</li>
+        <li>Sie erteilen hier keinen Auftrag</li>
+        <li>Bis zu 40% Umzugskosten sparen</li>
+      </ul>
+    </div>
+  </div>
+  <script type="text/javascript">
+    function modifyPartnerUniqueElements(virtuellPageName){
+      if(virtuellPageName === 'relocationStart'){
+        document.getElementById("benefitsdiv").className = "showbenefit";
+      }else {
+        document.getElementById("benefitsdiv").className = "hidebenefit";
+      }
+    }
+
+
+  </script>
+</div>
+</body>
+</html>
