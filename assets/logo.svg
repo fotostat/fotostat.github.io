@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="logo-svg" width="1024" height="768" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <title>Logo</title>
+    <g id="svg_1">
+      <path id="svg_2"
+            d="m128,64c-26.508003,0 -48,21.5 -48,48c0,26.515991 21.491997,48 48,48c26.515991,0 48,-21.484009 48,-48c0,-26.5 -21.484009,-48 -48,-48z"/>
+      <path id="svg_3"
+            d="m240,32h-71.921997c-3.640991,0 -7.312012,-14.547001 -8.078003,-16.078c-1.593994,-3.20301 -7.156006,-15.922 -16,-15.922h-32c-8.835999,0 -14.397987,12.71899 -16,15.922c-0.766006,1.530999 -4.438004,16.078 -8.078003,16.078h-71.921997c-8.836,0 -16,7.23399 -16,16.062v128.016003c0,8.843994 7.164,15.921997 16,15.921997h224c8.843994,0 16,-7.078003 16,-15.921997v-128.016003c0,-8.828011 -7.156006,-16.062 -16,-16.062zm-112,144c-35.335999,0 -64,-28.640991 -64,-64c0,-35.343987 28.664001,-64 64,-64c35.359009,0 64,28.656013 64,64c0,35.359009 -28.640991,64 -64,64z"/>
+    </g>
+    <text font-weight="bold" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="122" id="svg_4" y="120" x="551" stroke-width="0" stroke="#000000" fill="#000000">Fotostat</text>
+    <text id="svg_5" fill="#000000" stroke="#000000" stroke-width="0" x="801" y="120" font-size="122" font-family="Serif" text-anchor="middle" xml:space="preserve">.</text>
+    <text fill="#000000" stroke="#000000" stroke-width="0" x="876" y="119" id="svg_8" font-size="122" font-family="Sans-serif" text-anchor="middle" xml:space="preserve">us</text>
+
+    <text xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="50" id="svg_7" y="191" x="753" stroke-width="0" stroke="#000000" fill="#000000">Catch a moment</text>
+  </g>
+</svg>
